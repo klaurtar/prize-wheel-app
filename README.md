@@ -1,3 +1,3 @@
 # prize-wheel-app
 
-![](Prize Wheel Gif.gif)
+![](prize_wheel.gif)
