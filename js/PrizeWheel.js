@@ -34,7 +34,7 @@ class PrizeWheel {
   }
 
   createClock() {
-    return Math.floor(Math.random() * 15) + 5;
+    return Math.floor(Math.random() * 2) + 5;
   }
 
   getAngle(matrixValue) {

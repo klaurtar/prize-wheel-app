@@ -69,8 +69,14 @@
   width: 50%;
   border: none;
   border-radius: 15px;
-  background-color: #0b0c10;
-  color: #66fcf1;
+  background: linear-gradient(70deg, #fff810 30%, rgba(0, 0, 0, 0) 30%),
+    linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+  /* background-color: #0b0c10; */
+  color: white;
+
+  font-weight: bold;
+
+  text-align: center;
 
   position: fixed;
   top: 50%;

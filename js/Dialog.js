@@ -1,7 +1,7 @@
 class Dialog {
   constructor(
     options = {
-      color: '#66FCf1',
+      color: 'white',
       doneButtonText: 'Save',
       padding: '20px',
       width: '50%',
