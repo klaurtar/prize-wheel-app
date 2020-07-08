@@ -1,21 +1,19 @@
 const prizeWheelTemplate = `
-<h2>Land on <span style="color: <%= color %>"><% color %></span></h2>
+<h2>Land on <span style="color: <%= colorToWin %>"><%= colorToWin %></span></h2>
 <h3 id="time-display"></h3>
 
 <div style="position: relative">
     <div id="pointer"></div>
-    <div class="prize-wheel">
-        <div class="red"></div>
-        <div class="blue"></div>
-        <div class="green"></div>
-        <div class="yellow"></div>
+    <div class="prize-wheel" data-spinning="false">
+        <% colors.forEach(color => { %>
+            <div style="background-color: <%= color %>"></div>
+        <% }) %>
     </div>
 </div>
 
 <button class="spinButton">Spin</button>
-<% if(spinning){ %>
-    <button class="stopButton">Stop</button>
-<% } %> `;
+<button class="stopButton" data-active="false">Stop</button>
+<button class="new-game-button" data-active="true">New Colors</button>`;
 
 const dialogTemplate = `
     <div class="dialog">
